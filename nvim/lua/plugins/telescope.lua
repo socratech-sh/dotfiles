@@ -25,5 +25,11 @@ return {
             builtin.grep_string({ search = vim.fn.input("Grep > ") })
         end)
         vim.keymap.set('n', '<leader>vh', builtin.help_tags, {})
+
+        vim.keymap.set("n", "<leader>fD", function()
+            local search_dir = vim.fn.input("Search Directory: ", "", "file")
+            local command = string.format([[Telescope live_grep search_dirs={'%s'}]], search_dir)
+            vim.cmd(command)
+        end, { desc = "Live grep in specified directory" })
     end
 }
