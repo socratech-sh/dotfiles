@@ -21,3 +21,24 @@ vim.api.nvim_set_keymap(
     ":lua OpenTmuxWindowInCurrentDirectory()<CR>",
     { noremap = true, silent = true }
 )
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>Wl",
+    [[<cmd>lua require('core.workspaces').pick_workspace()<CR>]],
+    { noremap = true, silent = true, desc = "Pick Workspace" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>Wd",
+    [[<cmd>lua require('core.workspaces').pick_delworkspace()<CR>]],
+    { noremap = true, silent = true, desc = "Delete Workspace" }
+)
+
+vim.api.nvim_set_keymap(
+    "n",
+    "<leader>WD",
+    [[<cmd>lua require('core.workspaces').delete_unused_workspace()<CR>]],
+    { noremap = true, silent = true, desc = "Delete Workspace" }
+)
