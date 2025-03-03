@@ -1,0 +1,18 @@
+# Style configs
+font-family="MonoLisa Nerd Font"
+font-size=15
+font-thicken = true
+
+#background=081B20
+background-opacity=1
+background-blur=true
+background-blur-radius = 20
+
+theme = Argonaut
+#theme = Github-Dark-Default 
+
+# Key bindings
+keybind = ctrl+shift+t=new_window
+keybind = ctrl+l=next_tab
+keybind = ctrl+h=previous_tab
+keybind = ctrl+shift+n=new_tab
