@@ -56,8 +56,9 @@ if ! zig version &> /dev/null; then
     git clone https://github.com/ghostty-org/ghostty 
     cd ghostty
     zig build -Doptimize=ReleaseFast
+    sudo mv ./ghostty/zig-out/bin/ghostty /usr/bin/
+    cd ../
     rm -rf ghostty
+    ln -s  "$HOME/dotfiles/ghostty_config" "$HOME/.config/ghostty"
 fi
-
-
 
