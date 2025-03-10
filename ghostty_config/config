@@ -1,15 +1,15 @@
 # Style configs
 font-family="MonoLisa Nerd Font"
-font-size=15
+font-size=14
 font-thicken = true
 
-#background=081B20
-background-opacity=1
-background-blur=true
-background-blur-radius = 20
-
-theme = Argonaut
-#theme = Github-Dark-Default 
+# Glass version
+background=444444
+background-opacity=0.45
+#Dark glassh
+#background=000000
+#background-opacity=0.7
+#theme = Argonaut
 
 # Key bindings
 keybind = ctrl+shift+t=new_window
