@@ -1,5 +1,4 @@
-# Check if neovim exists if not download it and set the the necessary values 
-## ln -s "$HOME/dotfiles/starship.toml" "$HOME/.config/starhip.toml"
+
 if ! nvim -v &> /dev/null 
 then
 	echo "You don't have neovim"

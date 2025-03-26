@@ -1,15 +1,16 @@
 # Style configs
 font-family="MonoLisa Nerd Font"
-font-size=14
+font-size=15
 font-thicken = true
 
 # Glass version
-background=444444
-background-opacity=0.45
+#background=444444
+#background-opacity=0.45
+
 #Dark glassh
-#background=000000
-#background-opacity=0.7
-#theme = Argonaut
+background=000000
+background-opacity=0.7
+theme = Adventure
 
 # Key bindings
 keybind = ctrl+shift+t=new_window

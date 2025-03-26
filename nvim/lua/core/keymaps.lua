@@ -42,3 +42,5 @@ vim.api.nvim_set_keymap(
     [[<cmd>lua require('core.workspaces').delete_unused_workspace()<CR>]],
     { noremap = true, silent = true, desc = "Delete Workspace" }
 )
+
+vim.opt.clipboard:append("unnamedplus")
