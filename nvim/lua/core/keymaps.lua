@@ -44,3 +44,6 @@ vim.api.nvim_set_keymap(
 )
 
 vim.opt.clipboard:append("unnamedplus")
+
+--vim.keymap.set('t', '<esc>', [[<C-\><C-n>]])
+--vim.keymap.set("t", "<c-o>t", ":term")
