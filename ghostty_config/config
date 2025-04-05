@@ -1,6 +1,6 @@
 # Style configs
-font-family="MonoLisa Nerd Font"
-font-size=15
+font-family="MonoLisa Nerd Font Bold"
+font-size=18
 font-thicken = true
 
 # Glass version
