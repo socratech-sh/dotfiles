@@ -47,3 +47,10 @@
 ;; (unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;; (unpin! t)
+
+
+;; myconfig
+
+(package! doom-kera-theme
+          :recipe (:local-repo "themes"
+                   :files ("*.el")))

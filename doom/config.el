@@ -35,6 +35,8 @@
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'doom-dark+)
 
+;;(setq doom-theme 'doom-kera)
+
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
@@ -79,3 +81,21 @@
 
 (set-frame-parameter nil 'alpha-background 85)
 (add-to-list 'default-frame-alist '(alpha-background . 85))
+
+(defun +doom-dashboard-ascii-banner-fn ()
+  "Insert the 'Socratech' ASCII art as a Doom dashboard banner."
+  (let ((banner
+                                '("                _____                      _            _     "
+                                  "               /  ___|                    | |          | |    "
+                                  "               \\ `--.  ___   ___ _ __ __ _| |_ ___  ___| |__  "
+                                  "                `--. \\/ _ \\ / __| '__/ _` | __/ _ \\/ __| '_ \\ "
+                                  "               /\\__/ / (_) | (__| | | (_| | ||  __/ (__| | | |"
+                                  "               \\____/ \\___/ \\___|_|  \\__,_|\\__\\___|\\___|_| |_|"
+                                  "\n"
+                                  "                                  socratech.sh                  "
+                                  "\n")))
+    (dolist (line banner)
+      (insert line "\n"))))
+
+;; Tell Doom Emacs to use the above function for its splash screen banner
+(setq +doom-dashboard-ascii-banner-fn #'+doom-dashboard-ascii-banner-fn)
