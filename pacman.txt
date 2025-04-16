@@ -35,3 +35,5 @@ hyprland
 ghostty
 uwsm
 xdg-desktop-portal-hyprland
+less
+cmake
