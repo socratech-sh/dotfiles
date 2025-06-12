@@ -11,6 +11,7 @@ function OpenTmuxWindowInCurrentDirectory()
 
     local command = "tmux new-window -c " .. current_path
 
+
     os.execute(command)
 end
 
@@ -42,8 +43,3 @@ vim.api.nvim_set_keymap(
     [[<cmd>lua require('core.workspaces').delete_unused_workspace()<CR>]],
     { noremap = true, silent = true, desc = "Delete Workspace" }
 )
-
-vim.opt.clipboard:append("unnamedplus")
-
---vim.keymap.set('t', '<esc>', [[<C-\><C-n>]])
---vim.keymap.set("t", "<c-o>t", ":term")

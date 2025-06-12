@@ -1,6 +1,5 @@
 local mp = require("core.messagepack")
 
-
 local kv_store = {}
 
 local function isFile(path)
